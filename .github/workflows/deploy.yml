@@ -17,7 +17,7 @@ jobs:
           caching-myname: 'false'
          #uses: margan10/my-action #if this would be stored on repository level
       - name: Output inpormation
-        run: echo "Cache used? ${{steps.cache-deps.outputs.used-cache}}"
+        run: echo "Cache used? ${{steps.cache-deps.outputs.cache-used}}"
       - name: Lint code
         run: npm run lint
   test:
