@@ -13,4 +13,5 @@ runs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: npm ci
       shell: bash #extra setting when custom composite uses run key
+      #composite action file has to have name action.yml, action.yaml, to be tomatically launched when pointing to folder
   
