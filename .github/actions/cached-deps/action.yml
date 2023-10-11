@@ -24,7 +24,7 @@ runs:
       if: steps.cache.outputs.cache-hit != 'true' || inputs.caching-myname != 'true'
       run: |
         npm ci
-        echo "cache-used='${{inputs.aching-myname}}'" >> $GITHUB_OUTPUT
+        echo "cache-used='${{inputs.caching-myname}}'" >> $GITHUB_OUTPUT
       shell: bash #extra setting when custom composite uses run key
       #composite action file has to have name action.yml, action.yaml, to be tomatically launched when pointing to folder
   
