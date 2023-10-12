@@ -13,7 +13,7 @@ inputs:
     required: true
 outputs:
   website-url:
-    desctiption: 'The URL of the deployed website' #there is no value here because we will set it from code
+    description: 'The URL of the deployed website' #there is no value here because we will set it from code
 runs:
   using: 'node16'
   main: main.js
