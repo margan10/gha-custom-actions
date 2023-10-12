@@ -14,9 +14,9 @@ function run() {
     //exec.exec(`aws s3 sync ${distFolder} ${s3Uri} --rgion ${bucketRegion}`); //this will look for environment variables to authenticate request
 
     const websiteUrl = `http://${bucket}.s3-website-${bucketRegion}.amazonws.com}`;
-    core.setOutput('website- url', websiteUrl); //equivalent to echo 
+    core.setOutput('website-url', websiteUrl); //equivalent to echo 
 
-    core.notice('Hello from my custom JavaScript Action!')
+    core.notice(`Hello from my custom JavaScript Action! ${websiteUrl} `)
 }
 
 
